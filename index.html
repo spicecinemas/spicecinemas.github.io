@@ -4,11 +4,11 @@
 
 
     <head>
-    <title>Super Saver COMBO: GET A FREE NACHO</title>
+    <title>CLICK HERE TO GET A FREE NACHO</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <meta name="description" content="Welcome to Spice Cinemas">
-    <link href="images/SpiceLogo.jpg" rel="shortcut icon" type="image/jpg">
+    <link href="images/spicenewlogo.png" rel="shortcut icon" type="image/jpg">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.scrolly.min.js"></script>
     <script src="js/skel.min.js"></script>
@@ -29,6 +29,18 @@
   ga('create', 'UA-88274276-1', 'auto');
   ga('send', 'pageview');
 
+  function MakeBold() {
+    document.execCommand('bold', null, false);
+  }
+
+  var $li = $('#menu li').click(function() {
+    $li.removeClass('selected');
+    $(this).addClass('selected');
+});
+
+li.selected {
+  color: green;
+}
 </script>
 
 </head>
@@ -40,32 +52,35 @@
     <body>
     <!-- Nav -->
     <nav id="nav">
-      <img data-id="image_mozzo_1" src="images/mozzo-logo.png" alt="">
+
+
         <ul class="container">
-            <li><a href="#top"><span>Welcome</span></a></li>
+            <li><a href="#order"><span>Order Food</span></a></li>
             <!--<li><a href="#order"><span>Order</span></a></li>-->
-            <li><a href="#portfolio"><span>Movies</span></a></li>
+            <li><a href="#movies"><span>Latest Movies</span></a></li>
         </ul>
     </nav>
 
     <!-- Home -->
     <div class="wrapper style1 first">
-      <article class="container" id="top">
+      <article class="container" id="order">
         <!--<p align="right"><img data-id="image_mozzo_1" src="images/mozzo-logo.png" alt=""></p>-->
             <div class="row">
                 <div class="4u">
                     <!--<span class="image fit">-->
-                        <img data-id="image_home_1" src="images/Gryo2dc5YukkmH6Go.jpg" alt="" height="250" width="250">
+                        <img data-id="image_home_1" src="images/Gryo2dc5YukkmH6Go.jpg" alt="" height="270" width="270">
 
                     <!--</span>-->
                 </div>
                 <div class="8u">
+
                     <header>
-                        <h1>Welcome to <strong>Spice Cinemas</strong>.</h1>
+                        <h1>Order Super Saver Combo. <br><br> <strong>Get a free Nacho</strong>.</h1>
                     </header>
-                    <p>Check out the <strong>Super Saver Combo</strong>
-                    <!--<br/>Skip the queue and order food - click below </p>-->
+                    <p><strong>Skip the queue and order food - click below</strong></p>
                     <a href="http://order.mozzobytes.com/places/5" class="button big scrolly"><span>Order Food</span></a>
+                    <br/>
+                    <img data-id="image_mozzo_1" src="images/mozzo-logo.png" height="30" align="right" alt="">
                 </div>
             </div>
         </article>
@@ -146,7 +161,7 @@
 
     <!-- Portfolio -->
     <div class="wrapper style3">
-        <article id="portfolio">
+        <article id="movies">
             <header>
                 <h2>Now Showing...</h2>
 
